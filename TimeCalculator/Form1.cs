@@ -250,7 +250,7 @@ namespace TimeCalculator
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            CalculateGridColumn();
+            CalculateGridColumn(); 
         }
 
     }
