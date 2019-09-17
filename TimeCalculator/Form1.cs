@@ -251,13 +251,7 @@ namespace TimeCalculator
         private void Button3_Click(object sender, EventArgs e)
         {
             CalculateGridColumn();
-            test();
         }
 
-        private void test()
-        {
-            TimeSpan time = TimeSpan.Parse("21:34:51") + TimeSpan.Parse("6:01:06");
-            Console.WriteLine(time);
-        }
     }
 }
