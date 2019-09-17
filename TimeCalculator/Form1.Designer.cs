@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBoxHour1 = new System.Windows.Forms.TextBox();
-            this.textBoxMinute1 = new System.Windows.Forms.TextBox();
-            this.textBoxSecond1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
             this.textBoxSecond2 = new System.Windows.Forms.TextBox();
             this.textBoxMinute2 = new System.Windows.Forms.TextBox();
             this.textBoxHour2 = new System.Windows.Forms.TextBox();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxSecond1 = new System.Windows.Forms.TextBox();
+            this.textBoxMinute1 = new System.Windows.Forms.TextBox();
+            this.textBoxHour1 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBoxResultGrid = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxResultGrid = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -81,6 +82,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(980, 69);
             this.panel1.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(342, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(256, 18);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "নাওয়ীদের কালো হাত, ভেঙ্গে দাও, গুড়িয়ে দাও";
             // 
             // panel2
             // 
@@ -125,41 +136,39 @@
             this.panel3.Size = new System.Drawing.Size(484, 518);
             this.panel3.TabIndex = 0;
             // 
-            // textBoxHour1
+            // button2
             // 
-            this.textBoxHour1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHour1.Location = new System.Drawing.Point(48, 140);
-            this.textBoxHour1.Name = "textBoxHour1";
-            this.textBoxHour1.Size = new System.Drawing.Size(58, 26);
-            this.textBoxHour1.TabIndex = 0;
-            this.textBoxHour1.Text = "00";
-            this.textBoxHour1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxHour1.Click += new System.EventHandler(this.TextBoxHour1_Click);
-            this.textBoxHour1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxHour1_KeyPress);
+            this.button2.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(319, 225);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(119, 39);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Substract";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // textBoxMinute1
+            // button1
             // 
-            this.textBoxMinute1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMinute1.Location = new System.Drawing.Point(132, 140);
-            this.textBoxMinute1.Name = "textBoxMinute1";
-            this.textBoxMinute1.Size = new System.Drawing.Size(58, 26);
-            this.textBoxMinute1.TabIndex = 1;
-            this.textBoxMinute1.Text = "00";
-            this.textBoxMinute1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxMinute1.Click += new System.EventHandler(this.TextBoxMinute1_Click);
-            this.textBoxMinute1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxMinute1_KeyPress);
+            this.button1.BackColor = System.Drawing.Color.DarkKhaki;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(329, 163);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 39);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // textBoxSecond1
+            // textBoxResult
             // 
-            this.textBoxSecond1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSecond1.Location = new System.Drawing.Point(216, 140);
-            this.textBoxSecond1.Name = "textBoxSecond1";
-            this.textBoxSecond1.Size = new System.Drawing.Size(58, 26);
-            this.textBoxSecond1.TabIndex = 2;
-            this.textBoxSecond1.Text = "00";
-            this.textBoxSecond1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxSecond1.Click += new System.EventHandler(this.TextBoxSecond1_Click);
-            this.textBoxSecond1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxSecond1_KeyPress);
+            this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxResult.Location = new System.Drawing.Point(48, 265);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.Size = new System.Drawing.Size(226, 29);
+            this.textBoxResult.TabIndex = 6;
+            this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxSecond2
             // 
@@ -197,39 +206,41 @@
             this.textBoxHour2.Click += new System.EventHandler(this.TextBoxHour2_Click);
             this.textBoxHour2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxHour2_KeyPress);
             // 
-            // textBoxResult
+            // textBoxSecond1
             // 
-            this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResult.Location = new System.Drawing.Point(48, 265);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(226, 29);
-            this.textBoxResult.TabIndex = 6;
-            this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSecond1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSecond1.Location = new System.Drawing.Point(216, 140);
+            this.textBoxSecond1.Name = "textBoxSecond1";
+            this.textBoxSecond1.Size = new System.Drawing.Size(58, 26);
+            this.textBoxSecond1.TabIndex = 2;
+            this.textBoxSecond1.Text = "00";
+            this.textBoxSecond1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxSecond1.Click += new System.EventHandler(this.TextBoxSecond1_Click);
+            this.textBoxSecond1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxSecond1_KeyPress);
             // 
-            // button1
+            // textBoxMinute1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(329, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 39);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.textBoxMinute1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxMinute1.Location = new System.Drawing.Point(132, 140);
+            this.textBoxMinute1.Name = "textBoxMinute1";
+            this.textBoxMinute1.Size = new System.Drawing.Size(58, 26);
+            this.textBoxMinute1.TabIndex = 1;
+            this.textBoxMinute1.Text = "00";
+            this.textBoxMinute1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxMinute1.Click += new System.EventHandler(this.TextBoxMinute1_Click);
+            this.textBoxMinute1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxMinute1_KeyPress);
             // 
-            // button2
+            // textBoxHour1
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkKhaki;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(319, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 39);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Substract";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.textBoxHour1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxHour1.Location = new System.Drawing.Point(48, 140);
+            this.textBoxHour1.Name = "textBoxHour1";
+            this.textBoxHour1.Size = new System.Drawing.Size(58, 26);
+            this.textBoxHour1.TabIndex = 0;
+            this.textBoxHour1.Text = "00";
+            this.textBoxHour1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxHour1.Click += new System.EventHandler(this.TextBoxHour1_Click);
+            this.textBoxHour1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxHour1_KeyPress);
             // 
             // panel4
             // 
@@ -246,66 +257,6 @@
             this.panel4.Size = new System.Drawing.Size(484, 518);
             this.panel4.TabIndex = 1;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(72, 10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 32);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.ComboBox1_SelectedValueChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Month";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 72);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(311, 383);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellEnter);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(265, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 24);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Year";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(330, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(90, 26);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "2019";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
-            // 
-            // textBoxResultGrid
-            // 
-            this.textBoxResultGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxResultGrid.Location = new System.Drawing.Point(35, 470);
-            this.textBoxResultGrid.Name = "textBoxResultGrid";
-            this.textBoxResultGrid.ReadOnly = true;
-            this.textBoxResultGrid.Size = new System.Drawing.Size(226, 29);
-            this.textBoxResultGrid.TabIndex = 7;
-            this.textBoxResultGrid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkKhaki;
@@ -318,15 +269,65 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // label4
+            // textBoxResultGrid
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(342, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(256, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "নাওয়ীদের কালো হাত, ভেঙ্গে দাও, গুড়িয়ে দাও";
+            this.textBoxResultGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxResultGrid.Location = new System.Drawing.Point(35, 470);
+            this.textBoxResultGrid.Name = "textBoxResultGrid";
+            this.textBoxResultGrid.ReadOnly = true;
+            this.textBoxResultGrid.Size = new System.Drawing.Size(226, 29);
+            this.textBoxResultGrid.TabIndex = 7;
+            this.textBoxResultGrid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(330, 18);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(90, 26);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "2019";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(265, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 24);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Year";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 72);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(311, 383);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellEnter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Month";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(72, 10);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(175, 32);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.ComboBox1_SelectedValueChanged);
             // 
             // Form1
             // 
@@ -335,6 +336,7 @@
             this.ClientSize = new System.Drawing.Size(980, 593);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Time Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
